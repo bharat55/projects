@@ -1,0 +1,79 @@
+<! DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+               vertical nevigation bar
+        </title>
+        <style>
+
+
+             ul {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                background-color:grey;
+                overflow:hidden;
+                border:1px solid black;
+                width:100px;
+             }
+             li a {
+               text-decoration: none;
+               display:block;
+               padding:20px;
+               color:white;
+               border-bottom: 1px solid black;
+               text-align:center;
+
+
+             }
+
+
+            #active, a:hover{
+              background-color: black;
+
+             }
+             #active {
+                   background-color: red;
+             }
+             li :last-child {
+                 border-botton:none;
+             }
+             .dropbox{
+                 display:inline-block;
+                 border:1px solid black ;
+                 border-overflow: none;
+             }
+             .content{
+               display:none;
+               background-color: lightgrey;
+               width:50px;
+               padding:15px;
+
+
+             }
+             .dropbox:hover .content{
+                 display:block;
+             }
+
+
+        </style>
+    </head>
+    <body>
+         <div>
+           <ul>
+
+               <li><a href="#home" id="active">HOME</a></li>
+               <li><a href="#home">MENU</a></li>
+               <li><a href="#home">CONTECT</a></li>
+               <li><a href="#home">ABOUT</a></li>
+           </ul>
+           <div class ="dropbox">
+               <h2>click on me</h2>
+               <div class ="content">
+                   you clicked on me
+               </div>
+             </div>
+
+     </body>
+
+</html>

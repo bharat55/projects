@@ -1,0 +1,101 @@
+<!DOCTYPE HTML >
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  </head>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+  <body>
+
+   Search :<input type = "text" placeholder="search..">
+
+
+   <hr>
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Country</th>
+  </tr>
+  <tr class = "demo">
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr class = "demo">
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr class = "demo">
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr class = "demo">
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+  <tr class = "demo">
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Canada</td>
+  </tr>
+  <tr class = "demo">
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Italy</td>
+  </tr>
+  <tr class = "demo">
+    <td>North/South</td>
+    <td>UK</td>
+  </tr>
+  <tr class = "demo">
+    <td>Paris specialites</td>
+    <td>France</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("input").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("td").filter(function (index){
+       $("td").eq(index).toggle($(this).text().indexOf(value) > -1)
+    });
+  });
+  });
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,3 @@
+class IndiaBank
+
+IndiaBank.new()

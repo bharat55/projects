@@ -1,0 +1,18 @@
+
+mysqldump -u root -p -v Learn > Learn_dump.sql
+      to dump the old database
+mysqladmin -u root -p create emp_info
+       create new database with new name
+mysql -u root -p emp_info < Learn_dump.sql
+        copy all data from Learn_dumb to emp_info
+
+
+
+
+
+        mysqldump -u root -p -v a1 > a1_dump.sql
+        mysqladmin -u root -p create a2
+        mysql -u root -p a2 < a1_dump.sql
+
+
+/home/rails/Downloads/water-1330252__340.jpg

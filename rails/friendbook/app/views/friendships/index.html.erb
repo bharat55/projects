@@ -1,0 +1,26 @@
+<%- model_class = Friendship -%>
+<div class="page-header">
+  <h1>Pending request</h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%  @inverse_friendship.each do |friend| %>
+      <tr>
+         <td><%= friend.name %></td>
+        <td>
+        <%=link_to "Accept" ,accept_request_path(friend),:class => 'btn btn-default btn-xs btn-primary' %>
+        <%=link_to "Remove" ,delete_request_path(friend),:class => 'btn btn-default btn-xs btn-danger' %>
+        </td>
+    <%end%>
+      </tr>
+
+</table>
+
+

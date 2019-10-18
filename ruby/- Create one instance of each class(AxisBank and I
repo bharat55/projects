@@ -1,0 +1,20 @@
+- Create one instance of each class(AxisBank and InidaBank). this should have some attributes like code, address. these attributes will accept while creating bank instances. [Done]
+- Create at least 5 Customer Class instances. [Done]
+- Create a utility Module and include in bank and customer class to generate a random number for bank(bank_id) and customer(account_no). [Done]
+- Bank class should have a method to add a customer. [Done]
+- Add some customers in multiple banks. Also, make sure few customers are having an account in common banks( i.e. IndiaBank/AxisBank). [Done]
+- Bank instance should have one method `filter_customers` which should accept `block` and should return customer object.
+Example: axis_bank.filter_customers {|c| c.balance < 300 }  it should return only customers having a balance less than 300. [Not Done]
+- Customer can Deposit/Withdraw amount from a bank. (Only those customer can deposit/withdraw the amount if he is the customer of Bank.) [Done]
+- Deposit some amount for few users in the bank. Make at least 10-15 entries.  [Done]
+- WithDraw some amount for few users from the bank. Make at least 10 - 15 entries. [Done]
+
+- Bank object should have a method to return `total_balance_of_all_customers` and `all_customer_count`.  [Not Done]
+
+- Bank should have the method to give a mini statement of 10 most recent transactions of the customer. [Done]
+- Bank should have a method to find the customer by account_number and print the customer details like account_number, available_balance etc. [Not Done]
+
+- Bank class should have a method to return all the customer details.
+- Bank class should have a method to return all the bank details.
+- Bank class should have a method to return total fund  [Done]
+- Bank class should have a method to return total customer count. [Done]

@@ -1,0 +1,8 @@
+<h1><%=@movies.length%> movies </h1>
+<%@movies.each do |movie|%>
+  <h2><%=movie.title%></h2>
+  <p><strong>rating :</strong><%=movie.rating%></p>
+  <p><strong>total_gross :</strong><%=number_to_currency(movie.total_gross)%></p>
+  <p><strong>released_on :</strong><%=movie.released_on%></p>
+  <p><%=movie.description%>
+<%end%>

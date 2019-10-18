@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  rating: MyString
+  description: MyText
+  cast: MyString
+  duration: MyString
+  total_gross: 
+
+two:
+  title: MyString
+  rating: MyString
+  description: MyText
+  cast: MyString
+  duration: MyString
+  total_gross: 

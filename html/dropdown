@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+         <title>dropdown menu</title>
+         <style>
+              .dropbox{
+                   position:relative;
+              }
+              li{
+                  display:none;
+              }
+              ul .content {
+                  list-style-type: none;
+                  background-color: grey;
+                  margin:0;
+                  padding:15px;
+
+
+              }
+         </style>
+    </head>
+    <body>
+          <div class ="dropbox">
+             <button class="dropbtn">drop here</button>
+             <ul class ="content">
+               <li>link1</li>
+               <li>link2</li>
+               <li>link3</li>
+    </body>
+</html>

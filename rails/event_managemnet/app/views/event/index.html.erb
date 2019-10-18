@@ -1,0 +1,7 @@
+<h1><%= pluralize(@events.length, 'Event') %></h1>
+<%@events.each do |event|%>
+  <h3><%=event.name%></h3>
+  <p><strong>Price :</strong><%=event.price%></p>
+  <p><strong>Description:</strong><%=event.description%></p>
+  <%= link_to "Go to the #{event.name}" ,page_path(event.id) %>
+<%end%>
